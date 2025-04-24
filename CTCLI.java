@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class CalorieTrackerCLI {
+public class CTCLI {
     private static Scanner scanner = new Scanner(System.in);
     private static User user;
     private static Tracker tracker;

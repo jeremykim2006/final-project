@@ -7,11 +7,11 @@ Meal.class: Meal.java
 Tracker.class: Tracker.java User.class Meal.class
 	javac -g Tracker.java
 
-CalorieTrackerCLI.class: CalorieTrackerCLI.java Tracker.class Meal.class User.class
-	javac -g CalorieTrackerCLI.java
+CTCLI.class: CTCLI.java Tracker.class Meal.class User.class
+	javac -g CTCLI.java
 
-testCLI: CalorieTrackerCLI.class
-	java CalorieTrackerCLI
+testCLI: CTCLI.class
+	java CTCLI
 
 clean:
 	rm -f *.class
