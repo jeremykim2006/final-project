@@ -49,8 +49,9 @@ public class CTCLI {
         double weightPounds = Double.parseDouble(scanner.nextLine());
         double weightKg = weightPounds * 0.453592; 
 
-        System.out.print("Enter your height (cm): ");
-        double height = Double.parseDouble(scanner.nextLine());
+	System.out.print("Enter your height (inches): ");
+   	 double heightInches = Double.parseDouble(scanner.nextLine());
+   	 double heightCm = heightInches * 2.54;
 
         System.out.print("Enter your gender (Male/Female): ");
         String gender = scanner.nextLine();
@@ -58,7 +59,7 @@ public class CTCLI {
         System.out.print("Enter your activity level (Sedentary, Light, Moderate, Active, Very Active): ");
         String activityLevel = scanner.nextLine();
 
-        user = new User(name, age, weightKg, height, gender, activityLevel);
+        user = new User(name, age, weightKg, heightCm, gender, activityLevel);
     }
 
     private static void calculateBMR() {
